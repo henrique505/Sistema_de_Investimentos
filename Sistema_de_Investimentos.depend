@@ -1,0 +1,461 @@
+# depslib dependency file v1.0
+1584205420 source:e:\tp1\sistema_de_investimentos\main.cpp
+	<iostream>
+
+1584205420 source:z:\tp1\sistema_de_investimentos\main.cpp
+	<iostream>
+
+1746993784 source:z:\tp1\sistema_de_investimentos\src\dominios\codigo.cpp
+	"Codigo.hpp"
+	<string>
+	<algorithm>
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\dominios\codigonegociacao.cpp
+	"CodigoNegociacao.hpp"
+	<ctype.h>
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\dominios\cpf.cpp
+	"Cpf.hpp"
+	<string>
+	<algorithm>
+
+1746994492 z:\tp1\sistema_de_investimentos\src\dominios\codigo.hpp
+	<stdexcept>
+	<string>
+	"DominioException.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\dominios\dominioexception.hpp
+	<stdexcept>
+	<string>
+
+1746906626 z:\tp1\sistema_de_investimentos\src\dominios\codigonegociacao.hpp
+	<iostream>
+	<string>
+	"DominioException.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\dominios\cpf.hpp
+	<string>
+	<stdexcept>
+	"DominioException.hpp"
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\dominios\dinheiro.cpp
+	"Dinheiro.hpp"
+	<cmath>
+	<stdexcept>
+	<string>
+	<algorithm>
+
+1746906626 z:\tp1\sistema_de_investimentos\src\dominios\dinheiro.hpp
+	"DominioException.hpp"
+
+1746992426 source:z:\tp1\sistema_de_investimentos\src\dominios\nome.cpp
+	"Nome.hpp"
+	<string>
+	<cctype>
+
+1746906626 z:\tp1\sistema_de_investimentos\src\dominios\nome.hpp
+	<string>
+	"DominioException.hpp"
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\dominios\perfil.cpp
+	"Perfil.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\dominios\perfil.hpp
+	<string>
+	"DominioException.hpp"
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\dominios\quantidade.cpp
+	"Quantidade.hpp"
+	<string>
+	<algorithm>
+
+1746906626 z:\tp1\sistema_de_investimentos\src\dominios\quantidade.hpp
+	<stdexcept>
+	"DominioException.hpp"
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\dominios\senha.cpp
+	"Senha.hpp"
+	<string>
+	<cctype>
+
+1746906626 z:\tp1\sistema_de_investimentos\src\dominios\senha.hpp
+	<string>
+	<stdexcept>
+	"DominioException.hpp"
+
+1746725183 source:z:\tp1\sistema_de_investimentos\src\entidades\carteira.cpp
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\dominios\data.cpp
+	"Data.hpp"
+	<sstream>
+	<iomanip>
+
+1746906626 z:\tp1\sistema_de_investimentos\src\dominios\data.hpp
+	<string>
+	"DominioException.hpp"
+
+1746917072 source:z:\tp1\sistema_de_investimentos\src\dominios\dominios.cpp
+	"Dominios.hpp"
+
+1746994553 z:\tp1\sistema_de_investimentos\src\dominios\dominios.hpp
+	"Codigo.hpp"
+	"CodigoNegociacao.hpp"
+	"Cpf.hpp"
+	"Data.hpp"
+	"Dinheiro.hpp"
+	"DominioException.hpp"
+	"Nome.hpp"
+	"Perfil.hpp"
+	"Quantidade.hpp"
+	"Senha.hpp"
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\entidades\conta.cpp
+	"Conta.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\entidades\conta.hpp
+	"Dominios.hpp"
+
+1746906626 source:z:\tp1\sistema_de_investimentos\dominios\dominios.hpp
+	"Codigo.hpp"
+	"CodigoNegociacao.hpp"
+	"Cpf.hpp"
+	"Data.hpp"
+	"Dinheiro.hpp"
+	"DominioException.hpp"
+	"Nome.hpp"
+	"Perfil.hpp"
+	"Quantidade.hpp"
+	"Senha.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\dominios\codigo.hpp
+	<stdexcept>
+	<string>
+	"DominioException.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\dominios\dominioexception.hpp
+	<stdexcept>
+	<string>
+
+1746906626 z:\tp1\sistema_de_investimentos\dominios\codigonegociacao.hpp
+	<iostream>
+	<string>
+	"DominioException.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\dominios\cpf.hpp
+	<string>
+	<stdexcept>
+	"DominioException.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\dominios\data.hpp
+	<string>
+	"DominioException.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\dominios\dinheiro.hpp
+	"DominioException.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\dominios\nome.hpp
+	<string>
+	"DominioException.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\dominios\perfil.hpp
+	<string>
+	"DominioException.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\dominios\quantidade.hpp
+	<stdexcept>
+	"DominioException.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\dominios\senha.hpp
+	<string>
+	<stdexcept>
+	"DominioException.hpp"
+
+1746906626 source:z:\tp1\sistema_de_investimentos\dominios\codigo.hpp
+	<stdexcept>
+	<string>
+	"DominioException.hpp"
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\teste\dominios\tucodigo.cpp
+	"TUCodigo.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\teste\dominios\tucodigo.hpp
+	"Codigo.hpp"
+	<string>
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\entidades\ordem.cpp
+	"Ordem.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\entidades\ordem.hpp
+	"Dominios.hpp"
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\teste\dominios\tucpf.cpp
+	"TUCpf.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\teste\dominios\tucpf.hpp
+	"Cpf.hpp"
+	<string>
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\teste\dominios\tudata.cpp
+	"TUData.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\teste\dominios\tudata.hpp
+	"Data.hpp"
+	<string>
+
+1746991156 source:z:\tp1\sistema_de_investimentos\src\teste\dominios\tudinheiro.cpp
+	"TUDinheiro.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\teste\dominios\tudinheiro.hpp
+	"Dinheiro.hpp"
+	<string>
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\teste\dominios\tunome.cpp
+	"TUNome.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\teste\dominios\tunome.hpp
+	"Nome.hpp"
+	<string>
+
+1746991173 source:z:\tp1\sistema_de_investimentos\src\teste\dominios\tucodigonegociacao.cpp
+	"TUCodigoNegociacao.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\teste\dominios\tucodigonegociacao.hpp
+	"CodigoNegociacao.hpp"
+	<string>
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\teste\dominios\tuperfil.cpp
+	"TUPerfil.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\teste\dominios\tuperfil.hpp
+	"Perfil.hpp"
+	<string>
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\teste\dominios\tuquantidade.cpp
+	"TUQuantidade.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\teste\dominios\tuquantidade.hpp
+	"Quantidade.hpp"
+	<string>
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\teste\dominios\tusenha.cpp
+	"TUSenha.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\teste\dominios\tusenha.hpp
+	"Senha.hpp"
+	<string>
+
+1746757836 source:z:\tp1\sistema_de_investimentos\src\teste\entidades\tucarteira.cpp
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\teste\entidades\tuconta.cpp
+	"TUConta.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\teste\entidades\tuconta.hpp
+	"Conta.hpp"
+	"Dominios.hpp"
+	<string>
+
+1746906626 source:z:\tp1\sistema_de_investimentos\src\teste\entidades\tuordem.cpp
+	"TUOrdem.hpp"
+
+1746906626 z:\tp1\sistema_de_investimentos\src\teste\entidades\tuordem.hpp
+	"Ordem.hpp"
+	"Dominios.hpp"
+	<string>
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\codigo.cpp
+	"Codigo.hpp"
+	<string>
+	<algorithm>
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\codigo.hpp
+	<stdexcept>
+	<string>
+	"DominioException.hpp"
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\dominioexception.hpp
+	<stdexcept>
+	<string>
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\codigonegociacao.cpp
+	"CodigoNegociacao.hpp"
+	<ctype.h>
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\codigonegociacao.hpp
+	<iostream>
+	<string>
+	"DominioException.hpp"
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\cpf.cpp
+	"Cpf.hpp"
+	<string>
+	<algorithm>
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\cpf.hpp
+	<string>
+	<stdexcept>
+	"DominioException.hpp"
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\data.cpp
+	"Data.hpp"
+	<sstream>
+	<iomanip>
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\data.hpp
+	<string>
+	"DominioException.hpp"
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\dinheiro.cpp
+	"Dinheiro.hpp"
+	<cmath>
+	<stdexcept>
+	<string>
+	<algorithm>
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\dinheiro.hpp
+	"DominioException.hpp"
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\dominios.cpp
+	"Dominios.hpp"
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\dominios.hpp
+	"Codigo.hpp"
+	"CodigoNegociacao.hpp"
+	"Cpf.hpp"
+	"Data.hpp"
+	"Dinheiro.hpp"
+	"DominioException.hpp"
+	"Nome.hpp"
+	"Perfil.hpp"
+	"Quantidade.hpp"
+	"Senha.hpp"
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\nome.hpp
+	<string>
+	"DominioException.hpp"
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\perfil.hpp
+	<string>
+	"DominioException.hpp"
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\quantidade.hpp
+	<stdexcept>
+	"DominioException.hpp"
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\senha.hpp
+	<string>
+	<stdexcept>
+	"DominioException.hpp"
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\nome.cpp
+	"Nome.hpp"
+	<string>
+	<cctype>
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\perfil.cpp
+	"Perfil.hpp"
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\quantidade.cpp
+	"Quantidade.hpp"
+	<string>
+	<algorithm>
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\dominios\senha.cpp
+	"Senha.hpp"
+	<string>
+	<cctype>
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\entidades\carteira.cpp
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\entidades\conta.cpp
+	"Conta.hpp"
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\entidades\conta.hpp
+	"Dominios.hpp"
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\entidades\ordem.cpp
+	"Ordem.hpp"
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\entidades\ordem.hpp
+	"Dominios.hpp"
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tucodigo.cpp
+	"TUCodigo.hpp"
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tucodigo.hpp
+	"Codigo.hpp"
+	<string>
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tucodigonegociacao.cpp
+	"TUCodigoNegociacao.hpp"
+
+1747011830 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tucodigonegociacao.hpp
+	"CodigoNegociacao.hpp"
+	<string>
+
+1747011830 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tucpf.cpp
+	"TUCpf.hpp"
+
+1747011831 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tucpf.hpp
+	"Cpf.hpp"
+	<string>
+
+1747011831 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tudata.cpp
+	"TUData.hpp"
+
+1747011831 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tudata.hpp
+	"Data.hpp"
+	<string>
+
+1747011831 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tudinheiro.cpp
+	"TUDinheiro.hpp"
+
+1747011831 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tudinheiro.hpp
+	"Dinheiro.hpp"
+	<string>
+
+1747011831 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tunome.cpp
+	"TUNome.hpp"
+
+1747011831 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tunome.hpp
+	"Nome.hpp"
+	<string>
+
+1747011831 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tuperfil.cpp
+	"TUPerfil.hpp"
+
+1747011831 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tuperfil.hpp
+	"Perfil.hpp"
+	<string>
+
+1747011831 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tuquantidade.cpp
+	"TUQuantidade.hpp"
+
+1747011831 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tuquantidade.hpp
+	"Quantidade.hpp"
+	<string>
+
+1747011831 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tusenha.cpp
+	"TUSenha.hpp"
+
+1747011831 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\dominios\tusenha.hpp
+	"Senha.hpp"
+	<string>
+
+1747011831 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\entidades\tucarteira.cpp
+
+1747011831 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\entidades\tuconta.cpp
+	"TUConta.hpp"
+
+1747011831 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\entidades\tuconta.hpp
+	"Conta.hpp"
+	"Dominios.hpp"
+	<string>
+
+1747011831 source:d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\entidades\tuordem.cpp
+	"TUOrdem.hpp"
+
+1747011831 d:\downloads\sistema_de_investimentos2\sistema_de_investimentos\src\teste\entidades\tuordem.hpp
+	"Ordem.hpp"
+	"Dominios.hpp"
+	<string>
+

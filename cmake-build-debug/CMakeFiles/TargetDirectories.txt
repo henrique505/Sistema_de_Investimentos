@@ -1,0 +1,3 @@
+D:/downloads/Sistema_de_Investimentos2/Sistema_de_Investimentos/cmake-build-debug/CMakeFiles/Sistema_de_Investimentos.dir
+D:/downloads/Sistema_de_Investimentos2/Sistema_de_Investimentos/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/downloads/Sistema_de_Investimentos2/Sistema_de_Investimentos/cmake-build-debug/CMakeFiles/rebuild_cache.dir

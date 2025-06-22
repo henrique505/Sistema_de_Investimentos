@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Sistema_de_Investimentos" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Sistema_de_Investimentos" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-fno-dce" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Sistema_de_Investimentos" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Dominios/Codigo.hpp" />
+		<Unit filename="Dominios/CodigoNegociacao.hpp" />
+		<Unit filename="Dominios/Cpf.hpp" />
+		<Unit filename="Dominios/Data.hpp" />
+		<Unit filename="Dominios/Dinheiro.hpp" />
+		<Unit filename="Dominios/DominioException.hpp" />
+		<Unit filename="Dominios/Dominios.hpp" />
+		<Unit filename="Dominios/Nome.hpp" />
+		<Unit filename="Dominios/Perfil.hpp" />
+		<Unit filename="Dominios/Quantidade.hpp" />
+		<Unit filename="Dominios/Senha.hpp" />
+		<Unit filename="Entidades/Carteira.hpp" />
+		<Unit filename="Entidades/Conta.hpp" />
+		<Unit filename="Entidades/Ordem.hpp" />
+		<Unit filename="Testes/Dominios/TUCodigo.hpp" />
+		<Unit filename="Testes/Dominios/TUCodigoNegociacao.hpp" />
+		<Unit filename="Testes/Dominios/TUCpf.hpp" />
+		<Unit filename="Testes/Dominios/TUData.hpp" />
+		<Unit filename="Testes/Dominios/TUDinheiro.hpp" />
+		<Unit filename="Testes/Dominios/TUNome.hpp" />
+		<Unit filename="Testes/Dominios/TUPerfil.hpp" />
+		<Unit filename="Testes/Dominios/TUQuantidade.hpp" />
+		<Unit filename="Testes/Dominios/TUSenha.hpp" />
+		<Unit filename="Testes/Entidades/TUCarteira.hpp" />
+		<Unit filename="Testes/Entidades/TUConta.hpp" />
+		<Unit filename="Testes/Entidades/TUOrdem.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Dominios/Codigo.cpp" />
+		<Unit filename="src/Dominios/CodigoNegociacao.cpp" />
+		<Unit filename="src/Dominios/Cpf.cpp" />
+		<Unit filename="src/Dominios/Data.cpp" />
+		<Unit filename="src/Dominios/Dinheiro.cpp" />
+		<Unit filename="src/Dominios/Dominios.cpp" />
+		<Unit filename="src/Dominios/Nome.cpp" />
+		<Unit filename="src/Dominios/Perfil.cpp" />
+		<Unit filename="src/Dominios/Quantidade.cpp" />
+		<Unit filename="src/Dominios/Senha.cpp" />
+		<Unit filename="src/Entidades/Carteira.cpp" />
+		<Unit filename="src/Entidades/Conta.cpp" />
+		<Unit filename="src/Entidades/Ordem.cpp" />
+		<Unit filename="src/Teste/Dominios/TUCodigo.cpp" />
+		<Unit filename="src/Teste/Dominios/TUCodigoNegociacao.cpp" />
+		<Unit filename="src/Teste/Dominios/TUCpf.cpp" />
+		<Unit filename="src/Teste/Dominios/TUData.cpp" />
+		<Unit filename="src/Teste/Dominios/TUDinheiro.cpp" />
+		<Unit filename="src/Teste/Dominios/TUNome.cpp" />
+		<Unit filename="src/Teste/Dominios/TUPerfil.cpp" />
+		<Unit filename="src/Teste/Dominios/TUQuantidade.cpp" />
+		<Unit filename="src/Teste/Dominios/TUSenha.cpp" />
+		<Unit filename="src/Teste/Entidades/TUCarteira.cpp" />
+		<Unit filename="src/Teste/Entidades/TUConta.cpp" />
+		<Unit filename="src/Teste/Entidades/TUOrdem.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

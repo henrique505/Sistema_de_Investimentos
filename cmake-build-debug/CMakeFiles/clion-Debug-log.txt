@@ -1,0 +1,4 @@
+"D:\Arquivos de Programas\JetBrains\CLion\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/Arquivos de Programas/JetBrains/CLion/CLion 2024.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\downloads\Sistema_de_Investimentos2\Sistema_de_Investimentos -B D:\downloads\Sistema_de_Investimentos2\Sistema_de_Investimentos\cmake-build-debug
+-- Configuring done (0.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: D:/downloads/Sistema_de_Investimentos2/Sistema_de_Investimentos/cmake-build-debug
