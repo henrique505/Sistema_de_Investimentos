@@ -6,42 +6,8 @@
 #define INTERFACES_HPP
 
 #include "Entidades.hpp"
-
-// Interface da camada de apresentação (IU)
-class IUConta {
-public:
-    virtual void criar() = 0;
-    virtual void editar() = 0;
-    virtual void excluir() = 0;
-    virtual void ler() = 0;
-    virtual ~IUConta() {}
-};
-
-class IUCarteira {
-public:
-    virtual void criar() = 0;
-    virtual void editar() = 0;
-    virtual void excluir() = 0;
-    virtual void ler() = 0;
-    virtual void listar() = 0;
-    virtual ~IUCarteira() {}
-};
-
-class IUOrdem {
-public:
-    virtual void criar() = 0;
-    virtual void excluir() = 0;
-    virtual void ler() = 0;
-    virtual void listarPorCarteira() = 0;
-    virtual ~IUOrdem() {}
-};
-
-class IUAutenticacao {
-public:
-    virtual bool autenticar() = 0;
-    virtual void setCntr(ILNAutenticacao *cntr) = 0;
-    virtual ~IUAutenticacao() {}
-};
+#include <list>
+using std::list;
 
 // Interface da camada de lógica de negócio (LN)
 class ILNConta {
@@ -75,7 +41,46 @@ public:
 class ILNAutenticacao {
 public:
     virtual bool autenticar(const CPF &cpf, const Senha &senha) = 0;
+    virtual void registrar(const CPF &, const Senha &, const Nome & ) = 0;
     virtual ~ILNAutenticacao() {}
+
+};
+
+// Interface da camada de apresentação (IU)
+class IUConta {
+public:
+    virtual void criar() = 0;
+    virtual void editar() = 0;
+    virtual void excluir() = 0;
+    virtual void ler() = 0;
+    virtual void menu(const CPF&) = 0;
+    virtual ~IUConta() {}
+};
+
+class IUCarteira {
+public:
+    virtual void criar() = 0;
+    virtual void editar() = 0;
+    virtual void excluir() = 0;
+    virtual void ler() = 0;
+    virtual void listar() = 0;
+    virtual ~IUCarteira() {}
+};
+
+class IUOrdem {
+public:
+    virtual void criar() = 0;
+    virtual void excluir() = 0;
+    virtual void ler() = 0;
+    virtual void listarPorCarteira() = 0;
+    virtual ~IUOrdem() {}
+};
+
+class IUAutenticacao {
+public:
+    virtual bool autenticar() = 0;
+    virtual void setCntr(ILNAutenticacao *cntr) = 0;
+    virtual ~IUAutenticacao() {}
 };
 
 #endif //INTERFACES_HPP

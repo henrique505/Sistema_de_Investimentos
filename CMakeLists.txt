@@ -1,13 +1,22 @@
 cmake_minimum_required(VERSION 3.10)
 project(Sistema_de_Investimentos)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 include_directories(Dominios)
 include_directories(Entidades)
 include_directories(Testes)
 include_directories(Testes/Dominios)
 include_directories(Testes/Entidades)
+include_directories(Servicos)
+include_directories(Interfaces)
+include_directories(Controladoras)
+
+
+include_directories(${CMAKE_SOURCE_DIR}/external/sqlite)
+add_library(sqlite3 STATIC external/sqlite/sqlite3.c
+        Controladoras/ctrlAutenticacao.hpp
+        source_lib/Controladoras/ctrlConta.cpp)
 
 add_executable(Sistema_de_Investimentos
     Dominios/Codigo.hpp
@@ -66,4 +75,13 @@ add_executable(Sistema_de_Investimentos
         Testes/Entidades/TUEntidades.hpp
         Interfaces/interfaces.hpp
         Entidades/Entidades.hpp
+        Servicos/servicoAutenticacao.hpp
+        source_lib/Servicos/servicoAutenticacao.cpp
+        Controladoras/ctrlAutenticacao.hpp
+        source_lib/Controladoras/ctrlAutenticacao.cpp
+        Servicos/servicoConta.hpp
+        source_lib/Servicos/servicoConta.cpp
+        Controladoras/ctrlConta.hpp
+        source_lib/Controladoras/ctrlConta.cpp
 )
+target_link_libraries(Sistema_de_Investimentos PRIVATE sqlite3)

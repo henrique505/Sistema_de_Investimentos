@@ -2,42 +2,26 @@
 #include "Dominios.hpp"
 #include "TUDominios.hpp"
 #include "TUEntidades.hpp"
-using namespace std;
+#include "ctrlAutenticacao.hpp"
+#include "ctrlConta.hpp"
+#include "servicoAutenticacao.hpp"
+#include "servicoConta.hpp"
 
-int main()
-{
-    TUCodigo codigo;
-    TUCodigoNegociacao negociacao;
-    TUCpf cpf;
-    TUData data;
-    TUDinheiro dinheiro;
-    TUNome nome;
-    TUPerfil perfil;
-    TUQuantidade quant;
-    TUSenha senha;
+int main() {
+    CtrlAutenticacao ctrlAut;
+    ServicoAutenticacao servAut;
 
-    cout << "\n********************TESTE DOS DOMINIOS************************\n";
+    CtrlConta ctrlConta;
+    ServicoConta servConta;
 
-    cout << "Teste do dominio Dinheiro: " << codigo.runCodigo() << endl;
-    cout << "Teste do dominio CodigoNegociacao: " << negociacao.runCodigoNegociacao() << endl;
-    cout << "Teste do dominio CPF: " << cpf.runCpf() << endl;
-    cout << "Teste do dominio Data: " << data.runData() << endl;
-    cout << "Teste do dominio Dinheiro: " << dinheiro.runDinheiro() << endl;
-    cout << "Teste do dominio Nome: " << nome.runNome() << endl;
-    cout << "Teste do dominio Perfil: " << perfil.runPerfil() << endl;
-    cout << "Teste do dominio Quantidade: " << quant.runQuantidade() << endl;
-    cout << "Teste do dominio Senha: " << senha.runSenha() << endl;
+    // Injetar serviços
+    ctrlAut.setCntr(&servAut);
+    ctrlAut.setCtrlConta(&servConta);    // serviço de conta
+    ctrlAut.setCtrlConta(&ctrlConta);    // controlador de conta <-- ESSENCIAL
 
+    ctrlConta.setCntr(&servConta);       // conectar serviço ao controlador de conta
 
-    cout << "\n********************TESTE DAS ENTIDADES***********************\n";
-
-    TUOrdem ordem;
-    TUConta conta;
-    TUCarteira carteira;
-
-    cout << "Teste da entidade Ordem: " << ordem.runOrdem() << endl;
-    cout << "Teste da entidade Conta: " << conta.runConta() << endl;
-    cout << "Teste da entidade Carteira: " << carteira.runCarteira() << endl;
+    ctrlAut.menu(); // inicia menu
 
     return 0;
 }
