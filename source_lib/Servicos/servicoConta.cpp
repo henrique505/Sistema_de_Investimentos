@@ -1,4 +1,3 @@
-// servicoConta.cpp
 #include "servicoConta.hpp"
 
 ServicoConta::ServicoConta() {
@@ -46,52 +45,81 @@ bool ServicoConta::criar(const Conta &conta) {
 
 Conta ServicoConta::ler(const CPF &cpf) {
     Conta conta;
-    conectar();
-
-    const char *sql = "SELECT nome FROM usuarios WHERE cpf = ?;";
+    const char *sql = "SELECT nome, senha FROM usuarios WHERE cpf = ?;";
     sqlite3_stmt *stmt;
 
     if (sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr) == SQLITE_OK) {
         sqlite3_bind_text(stmt, 1, cpf.getCPF().c_str(), -1, SQLITE_STATIC);
 
         if (sqlite3_step(stmt) == SQLITE_ROW) {
-            Nome nome;
-            nome.setNome(reinterpret_cast<const char *>(sqlite3_column_text(stmt, 0)));
-            conta.setCpf(cpf);
-            conta.setNome(nome);
-        } else {
-            throw std::runtime_error("Conta não encontrada.");
+            std::string nomeStr = reinterpret_cast<const char *>(sqlite3_column_text(stmt, 0));
+            std::string senhaStr = reinterpret_cast<const char *>(sqlite3_column_text(stmt, 1));
+
+            try {
+                Nome nome;
+                nome.setNome(nomeStr);
+                conta.setNome(nome);
+
+                Senha senha;
+                senha.setSenha(senhaStr);
+                conta.setSenha(senha);
+
+                conta.setCpf(cpf);
+            } catch (std::invalid_argument &e) {
+                std::cerr << "Erro ao ler conta: " << e.what() << std::endl;
+            }
         }
-    } else {
-        throw std::runtime_error("Erro ao preparar consulta.");
     }
 
     sqlite3_finalize(stmt);
-    desconectar();
     return conta;
 }
 
-
-
 bool ServicoConta::editar(const Conta &conta) {
-    const char *sql = "UPDATE usuarios SET nome = ? WHERE cpf = ?;";
+    Conta contaAtual = ler(conta.getCpf());  // Busca dados atuais
+
+    Conta contaFinal;
+    contaFinal.setCpf(conta.getCpf());
+
+    // Nome
+    try {
+        if (!conta.getNome().getNome().empty()) {
+            contaFinal.setNome(conta.getNome());
+        } else {
+            contaFinal.setNome(contaAtual.getNome());
+        }
+    } catch (...) {
+        contaFinal.setNome(contaAtual.getNome());
+    }
+
+    // Senha
+    try {
+        if (!conta.getSenha().getSenha().empty()) {
+            contaFinal.setSenha(conta.getSenha());
+        } else {
+            contaFinal.setSenha(contaAtual.getSenha());
+        }
+    } catch (...) {
+        contaFinal.setSenha(contaAtual.getSenha());
+    }
+
+    const char *sql = "UPDATE usuarios SET nome = ?, senha = ? WHERE cpf = ?;";
     sqlite3_stmt *stmt;
 
-    if (sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr) != SQLITE_OK)
+    if (sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr) != SQLITE_OK) {
         return false;
+    }
 
-    sqlite3_bind_text(stmt, 1, conta.getNome().getNome().c_str(), -1, SQLITE_STATIC);
-    sqlite3_bind_text(stmt, 2, conta.getCpf().getCPF().c_str(), -1, SQLITE_STATIC);
+    sqlite3_bind_text(stmt, 1, contaFinal.getNome().getNome().c_str(), -1, SQLITE_STATIC);
+    sqlite3_bind_text(stmt, 2, contaFinal.getSenha().getSenha().c_str(), -1, SQLITE_STATIC);
+    sqlite3_bind_text(stmt, 3, contaFinal.getCpf().getCPF().c_str(), -1, SQLITE_STATIC);
 
     bool sucesso = (sqlite3_step(stmt) == SQLITE_DONE);
     sqlite3_finalize(stmt);
     return sucesso;
 }
 
-
 bool ServicoConta::excluir(const CPF &cpf) {
-    conectar();  // ️ Certifique-se de conectar ao banco
-
     const char *sql = "DELETE FROM usuarios WHERE cpf = ?;";
     sqlite3_stmt *stmt;
 
@@ -110,7 +138,5 @@ bool ServicoConta::excluir(const CPF &cpf) {
     }
 
     sqlite3_finalize(stmt);
-    desconectar();  // Desconecte após uso
     return sucesso;
 }
-

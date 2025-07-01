@@ -6,22 +6,31 @@
 #include "ctrlConta.hpp"
 #include "servicoAutenticacao.hpp"
 #include "servicoConta.hpp"
+#include "ctrlCarteira.hpp"
+#include "servicoCarteira.hpp"
 
 int main() {
+    // Autenticacao
     CtrlAutenticacao ctrlAut;
     ServicoAutenticacao servAut;
 
+    // Conta
     CtrlConta ctrlConta;
     ServicoConta servConta;
 
-    // Injetar serviços
+    // Carteira
+    ServicoCarteira servCarteira;
+    CtrlCarteira ctrlCarteira(&servCarteira);
+
+    // Injecao de dependencias
     ctrlAut.setCntr(&servAut);
-    ctrlAut.setCtrlConta(&servConta);    // serviço de conta
-    ctrlAut.setCtrlConta(&ctrlConta);    // controlador de conta <-- ESSENCIAL
+    ctrlAut.setCtrlConta(&servConta);   // serviço
+    ctrlAut.setCtrlConta(&ctrlConta);   // controlador
+    ctrlConta.setCntr(&servConta);
+    ctrlConta.setCtrlCarteira(&ctrlCarteira);
 
-    ctrlConta.setCntr(&servConta);       // conectar serviço ao controlador de conta
-
-    ctrlAut.menu(); // inicia menu
+    // Menu inicial
+    ctrlAut.menu();
 
     return 0;
 }

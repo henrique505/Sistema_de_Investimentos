@@ -2,6 +2,7 @@
 #include "ctrlAutenticacao.hpp"
 #include "servicoConta.hpp"
 #include "ctrlConta.hpp"
+#include "utils.hpp"
 
 
 void CtrlAutenticacao::setCntr(ILNAutenticacao *cntr) {

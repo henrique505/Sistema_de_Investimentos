@@ -14,9 +14,15 @@ include_directories(Controladoras)
 
 
 include_directories(${CMAKE_SOURCE_DIR}/external/sqlite)
+include_directories(${CMAKE_SOURCE_DIR}/external)
+
 add_library(sqlite3 STATIC external/sqlite/sqlite3.c
         Controladoras/ctrlAutenticacao.hpp
-        source_lib/Controladoras/ctrlConta.cpp)
+        source_lib/Controladoras/ctrlConta.cpp
+        Servicos/servicoCarteira.hpp
+        Controladoras/ctrlCarteira.hpp
+        source_lib/Controladoras/ctrlCarteira.cpp
+        Servicos/servicoOrdem.hpp)
 
 add_executable(Sistema_de_Investimentos
     Dominios/Codigo.hpp
@@ -83,5 +89,12 @@ add_executable(Sistema_de_Investimentos
         source_lib/Servicos/servicoConta.cpp
         Controladoras/ctrlConta.hpp
         source_lib/Controladoras/ctrlConta.cpp
+        Servicos/servicoCarteira.hpp
+        source_lib/Servicos/servicoCarteira.cpp
+        Controladoras/ctrlCarteira.hpp
+        source_lib/Controladoras/ctrlCarteira.cpp
+        external/utils.hpp
+        Servicos/servicoOrdem.hpp
+        source_lib/Servicos/servicoOrdem.cpp
 )
 target_link_libraries(Sistema_de_Investimentos PRIVATE sqlite3)
